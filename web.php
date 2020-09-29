@@ -17,10 +17,10 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function(){
     Route::get('news/create','Admin\NewsController@add');
-     Route::post('profile/create', 'Admin\ProfileController@create'); # laravel13カリキュラムの課題
-    //以下２行応用課題
+     Route::post('profile/create', 'Admin\ProfileController@create'); # laravel 13カリキュラムの課題③
+    
     Route::get('profile/create','Admin\ProfileController@add');
-    Route::get('profile/edit','Admin\ProfileController@edit');
+    Route::post('profile/edit','Admin\ProfileController@update');# laravel 13カリキュラムの課題⑥
 });
 
 

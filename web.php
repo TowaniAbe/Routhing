@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'admin'], function(){
     Route::get('news/create','Admin\NewsController@add');
+     Route::post('profile/create', 'Admin\ProfileController@create'); # laravel13カリキュラムの課題
     //以下２行応用課題
     Route::get('profile/create','Admin\ProfileController@add');
     Route::get('profile/edit','Admin\ProfileController@edit');
